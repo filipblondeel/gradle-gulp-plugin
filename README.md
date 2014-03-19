@@ -12,14 +12,16 @@ Installing the plugin
 Releases of this plugin are hosted at BinTray (http://bintray.com) and is part of jcentral repository.
 Setup the plugin like this:
 
-	buildscript {
-		repositories {
-			jcenter()
-		}
-    	dependencies {
-			classpath 'be.filipblondeel.gradle:gradle-gulp-plugin:0.1'
+    buildscript {
+    	repositories {
+    		maven {
+    			url "http://dl.bintray.com/filipblondeel/gradle-plugins"
+    		}
     	}
-	}
+    	dependencies {
+    		classpath 'be.filipblondeel.gradle:gradle-gulp-plugin:0.1'
+    	}
+    }
 
 Include the plugin in your build.gradle file like this:
 
