@@ -60,7 +60,7 @@ bintray {
     publications = ['mavenJava']
 
     pkg {
-        repo = 'gradle'
+        repo = 'gradle-plugins'
         name = 'gradle-gulp-plugin'
         licenses = ['Apache-2.0']
     }
