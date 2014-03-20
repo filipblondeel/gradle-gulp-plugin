@@ -14,9 +14,7 @@ Setup the plugin like this:
 
     buildscript {
     	repositories {
-    		maven {
-    			url "http://dl.bintray.com/filipblondeel/gradle-plugins"
-    		}
+    		jcenter()
     	}
     	dependencies {
     		classpath 'be.filipblondeel.gradle:gradle-gulp-plugin:0.1'
