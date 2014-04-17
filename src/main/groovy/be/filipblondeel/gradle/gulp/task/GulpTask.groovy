@@ -1,5 +1,6 @@
-package be.filipblondeel.gradle.gulp
+package be.filipblondeel.gradle.gulp.task
 
+import be.filipblondeel.gradle.gulp.GulpPlugin
 import com.moowork.gradle.node.task.NodeTask
 import org.gradle.api.GradleException
 

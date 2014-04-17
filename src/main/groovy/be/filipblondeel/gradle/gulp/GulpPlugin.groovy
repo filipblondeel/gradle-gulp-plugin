@@ -1,5 +1,7 @@
 package be.filipblondeel.gradle.gulp
 
+import be.filipblondeel.gradle.gulp.task.GulpInstallTask
+import be.filipblondeel.gradle.gulp.task.GulpTask
 import com.moowork.gradle.node.NodePlugin
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -13,6 +15,7 @@ class GulpPlugin implements Plugin<Project> {
 
     @Override
     void apply(final Project project) {
+        project.extensions.create(GulpExtension.NAME, GulpExtension)
         project.plugins.apply(NodePlugin.class)
 
         project.extensions.extraProperties.set('GulpTask', GulpTask.class)
