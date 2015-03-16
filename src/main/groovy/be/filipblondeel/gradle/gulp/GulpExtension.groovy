@@ -8,6 +8,8 @@ class GulpExtension {
 
     String version = ''
 
+    def boolean useRoot = false
+
     static GulpExtension get(Project project) {
         return project.extensions.getByType(GulpExtension)
     }

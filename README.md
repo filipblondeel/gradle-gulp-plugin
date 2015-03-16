@@ -64,6 +64,16 @@ If you need to supply gulp with options, you have to create GulpTasks:
        args = ["build", "arg1", "arg2"]
     }
 
+If you wish to use gulp in a multi-project build, you may
+want to avoid installing node and gulp multiple times and
+instead use both node and gulp installed in the root:
+
+    node {
+      nodeModulesDir = rootProject.projectDir
+    }
+    gulp {
+      useRoot = true
+    }
 
 NPM helpers
 -----------
